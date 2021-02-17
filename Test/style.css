@@ -1,0 +1,322 @@
+body{
+    
+    font-family: sans-serif;
+    margin: 10px 0 0 0;
+}
+html {
+  box-sizing: border-box;
+}
+.header{
+    margin: 0 20px 0 20px;
+    padding: 0 20px 0 20px;
+}
+
+/*header styling*/
+.menubar{
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.logoholder{
+    background-image: url(./resources/phoenix-logo.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* flex: 1; */
+}
+.menubar nav{
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.menubar .navlinks{
+    list-style: none;
+    color:black;
+    /* float: left; */
+    margin: 15px;
+    padding: 5px;
+}
+.menu ul{
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    padding: 0;
+}
+.menubar .navlinks .links{
+    color:black; 
+    text-decoration: none;
+}
+.newjobholder{
+}
+.newjobholder ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    text-align: right;
+}
+.jumbo {
+    background-repeat: no-repeat;
+    background-image: url(./resources/annie-spratt-sggw4-qDD54-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    padding: 50px 50px 0px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.jumbo h1, .arrow img{
+    text-align: left;
+    margin: 20px 20px 20px 10px;
+    padding: 20px 20px 20px 10px;   
+}
+.arrow{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.jumbo .caption{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.jumbo .smallCaption{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.jumbo p{
+    text-align: left;
+    margin: 0px 20px 0px 10px;
+    padding: 5px 20px 5px 10px;
+    font-weight: 600;
+}
+.searchcontainer{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.jumbo form{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    padding: 20px 20px 0px 20px;
+    margin:0;
+}
+.jumbo form input{
+    width: 100%;
+    height: 100px;
+    border-color: transparent;
+    text-indent: 20px;
+}
+.jumbo form .searchinput{
+}
+.jumbo form button{
+    height: 100px;
+    width: 100%;
+    border-color: transparent;
+    background-color: #22b0fc;
+    font-weight: bold;
+    color:white;
+}
+.jumbo form .searchbtnHolder{
+}
+/*content with carousel*/
+.contentstrip1{
+    background-color:#e9f7fe;
+    padding: 50px 50px 50px 50px;    
+}
+.contentstrip1 h2, .contentstrip1 h4{
+    text-align: left;
+    margin: 20px 25px 20px 25px;
+    padding: 20px 25px 20px 25px;
+}
+.contentstrip1 h2{
+   
+}
+.contentstrip1 h4{
+    text-align:center;
+    color:grey;
+    font-weight:500;
+}
+.companylist{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: stretch;
+    margin: 20px 25px 20px 25px;
+    padding: 20px 25px 20px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.swiper-wrapper{
+    width: 100%;
+    height: 30%;
+}
+.swiper-slide{
+width: 250px !important;
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+}
+
+.swiper-slide h5{
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+        width:100%;
+}
+.swiper-slide p{
+    font-size: 12px;
+    margin: 20px 0px 20px 0px;
+    width:100%;
+}
+.swiper-slide img{
+    margin: 20px 0px 20px 0px;
+    width:auto;
+}
+.swiper-pagination-bullet{
+    display:none;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: relative;
+    top: unset;
+    width: 50px;
+    height: 50px;
+    margin-top: unset;
+    z-index: 10;
+    cursor: pointer;
+    display: grid;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 100%;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: unset;
+    left: unset;
+}
+.swipercontrols {
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+}
+.hwithSwcontrols{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-rows: 100px;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: unset;
+    right: unset;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 20px;
+    text-align: center;
+    font-variant: initial;
+    line-height: 0;
+    height: 0;
+}
+
+
+
+/*media queries*/
+@media (max-width: 991px) {
+  .header {
+    margin: unset;
+    padding: unset;
+    width:100%;
+}
+  .companylist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    margin: 20px 25px 20px 25px;
+    padding:unset;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-items:center;
+    gap: 25px 5px;
+}
+.menubar {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0fr 0fr;
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu{
+     grid-row: 2; 
+}
+.menu ul {
+    display: grid;
+    grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+           text-align: center;
+    padding: 0;
+}
+.logoholder {
+    background-image: url(./resources/phoenix-logo.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
+.newjobholder ul {
+    display: grid;
+    grid-template-columns:1fr;
+    padding: 0;
+    text-align: center;
+}
+.jumbo {
+    padding: unset;
+}
+.jumbo form {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 20px 0px 20px;
+    margin: 0;
+    text-align: center;
+}
+.jumbo .caption {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.hwithSwcontrols {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 50px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-rows: 100px;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.swipercontrols {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr 1fr;
+    gap:5px 0px;
+}
+.contentstrip1 h2, .contentstrip1 h4 {
+    text-align: left;
+}
+}

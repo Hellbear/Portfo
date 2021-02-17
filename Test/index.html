@@ -1,0 +1,207 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+    <div class = "container header">
+        <div class="menubar">
+            <nav class = "menu">
+                <ul>
+                    <li class="navlinks">
+                        <a class = "links" href="#">Demos</a>
+                        <ul>
+                        </ul>
+                    </li>
+                    <li class="navlinks">
+                        <a class = "links" href="#">Pages</a>                       
+                    </li>
+                    <li class="navlinks">
+                        <a class = "links" href="#">Support</a>                        
+                    </li>                    
+                </ul>
+            </nav>
+            <div class="logoholder">
+                
+            </div>
+            <div class="newjobholder">
+                  <ul>
+                    <li class="navlinks">
+                        <a class = "links" href="#">+ Submit New Job</a>
+                    </li>                    
+                </ul>              
+            </div>
+        </div>
+        <div class = "jumbo">
+            <div class="caption">
+                <h1>
+                    Join the most 
+                    <br>popular 
+                    <br>tech companies.
+                </h1>
+            </div>
+            <div class="smallCaption">
+                <p>
+                    We’ve helped over 2,500 job seekers to get into
+                </p>
+                <p>
+                    the most popular tech teams.
+                </p>
+            </div>
+            <div class="arrow">
+                <a aria-current="page" class="pt-11" href="#">
+                    <img src="resources/arrow.png" alt="arrow">
+                </a>
+            </div>
+            <div class ="searchcontainer">
+                 <form action="#" method="get">
+                     <div class = "searchinput first">
+                         <input type="text" class="" id="keyword" placeholder="Try “Software Developer”">
+                     </div>
+                     <div class = "searchinput second">
+                         <input type="text" class="" id="keyword" placeholder="Singapore">
+                     </div>
+                     <div class = "searchbtnHolder">
+                         <button class="searchbtn">Search Job</button>
+                     </div>
+                     
+                </form>                 
+            </div>            
+        </div>
+    </div>
+    <div class= "contentstrip1">
+        <div class ="smallcaption">
+            <h4>Popular tech companies who are seeking talents in our website</h4>
+        </div>
+        <div class = "companylist">
+            <div class="">
+                <img src="resources/fb.png">
+            </div>            
+            <div class="">
+                <img src="resources/ms.png">
+            </div>
+             <div class="">
+                <img src="resources/slack.png">
+            </div>
+            <div class="">
+                <img src="resources/amazon.png">
+            </div>
+            <div class="">
+                <img src="resources/google.png">
+            </div>           
+        </div>
+        <div>
+            <div class="hwithSwcontrols">
+                <h2>
+                    Explore                   
+                    <br>
+                    by category 
+                </h2>
+                    		<!-- Add Arrows -->
+        <div class = "swipercontrols">
+        <div></div> 
+		<div class="swiper-button-prev"></div>            
+		<div class="swiper-button-next"></div>
+        </div>
+            </div>
+            <div>
+	<!-- Swiper -->
+	<div class="swiper-container">
+        		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Developer</h5>
+                <p>272 Jobs</p>
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Design</h5>
+                <p>272 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Marketing</h5>
+                <p>472 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Human Resource</h5>
+                <p>172 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Customer Support</h5>
+                <p>2172 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Finance</h5>
+                <p>272 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Dev</h5>
+                <p>272 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Dev</h5>
+                <p>272 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Dev</h5>
+                <p>272 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Dev</h5>
+                <p>272 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Dev</h5>
+                <p>272 Jobs</p>            
+            </div>
+			<div class="swiper-slide">
+                <img src="resources/google.png">
+                <h5>Dev</h5>
+                <p>272 jobs</p>            
+            </div>            
+		</div>
+	</div>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script> 
+            </div>                
+        </div>
+        <div>
+        </div>
+    </div>    
+    </body>
+</html>
