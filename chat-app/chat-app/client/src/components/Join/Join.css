@@ -19,16 +19,21 @@ html, body {
   height: 100vh;
   align-items: center;
   background-color: #1A1A1D;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('../Chat/backgrounds/bg.jpg');
 }
 
 .joinInnerContainer {
-  width: 20%;
+  width: 25%;
+  padding: 0 0 30px 0;
+  background: rgba(224, 221, 221, 0.2);
+  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  transform: scale(1);
 }
 
 .joinInput {
   border-radius: 0;
   padding: 15px 20px;
-  width: 100%;
+  width: 90%;
 }
 
 .heading {
@@ -36,6 +41,7 @@ html, body {
   font-size: 2.5em;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
+  margin: 20px 20px;
 }
 
 .button {
@@ -47,7 +53,12 @@ html, body {
     border-radius: 5px;
     display: inline-block;
     border: none;
-    width: 100%;
+    width: 90%;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+  background-color: #13ec5c;
 }
 
 .mt-20 {

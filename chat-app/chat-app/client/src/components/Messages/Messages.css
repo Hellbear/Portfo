@@ -2,4 +2,15 @@
   padding: 5% 0;
   overflow: auto;
   flex: auto;
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .messages {
+    background: linear-gradient( rgba(0, 0, 0, 0.644), rgba(73, 49, 49, 0.101) ), url('../Chat/backgrounds/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 }
