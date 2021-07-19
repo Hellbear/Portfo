@@ -1,0 +1,29 @@
+.task{ 
+    background:rgba(184, 206, 234, 0.15);
+    border-left:5px solid rgb(245, 113, 73);
+    margin:15px 5px 15px 5px;
+    padding: 10px 20px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow: 3px 6px 3px -1px teal;
+    
+}
+
+.task.reminder{
+    border-left:5px solid rgb(130, 252, 130);
+    box-shadow: -2px 3px 4px 2px gray inset;
+    background:rgba(132, 238, 164, 0.445);
+}
+
+.task h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.task .ng-fa-icon:hover {
+    transition: 0.5s;
+}
+.task .ng-fa-icon:hover {
+    font-size: 15px;
+}
