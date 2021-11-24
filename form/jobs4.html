@@ -1,0 +1,196 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://assets-cdn.breezy.hr/breezy-portal/css/font-awesome.min.css?v=klz-5p92yx"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+  .job-tile {
+    width: 100%;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    color: black;
+  }
+  .job-heading {
+    font-size: 20px;
+    line-height: 1.4;
+    width: 100%;
+    padding: 1rem 1.5rem 0rem 1.5rem;
+  }
+  .button .bzyButtonColor {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    background: #aaa;
+    background-color: rgb(170, 170, 170);
+    transition: 0.5ms;
+  }
+  .button {
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #282828;
+    cursor: pointer !important;
+    width: 100%;
+  }
+  .bzyButtonColor:hover {
+    background-color: #005a5a !important;
+  }
+
+  .text-heading {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .jobs-list {
+    padding: 5px 0px 5px 0px;
+    color: #282828;
+    cursor: pointer;
+  }
+  .jobs-list:hover {
+    color: rgb(126, 126, 126);
+  }
+  .jobs-ul {
+    padding-left: 10px;
+  }
+  .job-form-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    padding: 0;
+    color: #444444;
+  }
+  .form-label {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  label {
+    display: block;
+  }
+  .form-control {
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    max-width: 961px;
+  }
+  .form-control:active .form-control:visited {
+    border: 1px solid #005a5a;
+  }
+  .jobapp-chckbox{
+    margin-bottom:10px;
+  }
+  .jobapp-chckbox input{
+    margin-top: 5px;
+  }
+  .appformbox {
+    padding: 2rem;
+  }
+  .app-form-pic{
+      padding: 1rem;
+    background: url(amjith-s-NOY_FzRublM-unsplash.jpg);
+    background-size: cover;
+    background-position-x: 15%;
+    background-repeat: no-repeat;
+    }
+  .job-app-main{
+    margin-left: unset;
+    margin-right: unset;
+    }
+  .appformbox .form-control{
+    max-width: unset;
+  }
+  @media only screen and (max-width:767px){
+    .app-form-pic{
+      padding: 1rem;
+    background: url(amjith-s-NOY_FzRublM-unsplash.jpg);
+    background-size: cover;
+    background-position-x: 15%;
+    background-repeat: no-repeat;
+    display:none;
+    }
+  }
+</style>
+<body>
+  <div class="row job-app-main">
+    <div class="col-md-8 appformbox">
+      <p class="job-form-heading">Application Form</p>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Full Name *</label>
+        <input type="name" class="form-control" id="" placeholder="John Doe" required="">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email Address *</label>
+        <input type="email" class="form-control" id="" placeholder="your@email.com" required="">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Phone Number *</label>
+        <input class="form-control" id="" required="">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">CV *</label>
+        <button class="button bzyButtonColor">Upload File</button>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">ID *</label>
+        <button class="button bzyButtonColor">Upload File</button>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Please confirm the following: *</label>
+        <div class="form-control jobapp-chckbox" style="display: flex">
+          <input type="checkbox" id="drivers-license" name="drivers-license" value="" style="margin-right: 1em">
+          <label for="drivers-license"> I have a valid drivers license.</label><br>
+        </div>
+        <div class="form-control jobapp-chckbox" style="display: flex">
+          <input type="checkbox" id="car" name="car" value="" style="margin-right: 1em">
+          <label for="car"> I can drive to work.</label><br>
+        </div>
+        <div class="form-control jobapp-chckbox" style="display: flex">
+          <input type="checkbox" id="location" name="location" value="" style="margin-right: 1em">
+          <label for="location"> I live in Centurion/Pretoria</label><br>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">What is your salary expectation? *</label>
+          <input class="form-control" id="" required="">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Tell us about yourself</label>
+        <textarea class="form-control" id="" rows="3"></textarea>
+      </div>
+
+      <button class="button button-full bzyButtonColor" style="margin-top: 1rem">
+        Submit Application
+      </button>
+    </div>
+    <div class="col-md-4 app-form-pic">
+
+    </div>
+  </div>
+</body>
