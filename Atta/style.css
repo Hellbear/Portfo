@@ -1,0 +1,166 @@
+body{
+    width: 100%;   
+    
+}
+
+a.nav-link{
+    color:rgb(0, 0, 0) !important;
+}
+.heading{
+    border-bottom:3px solid #EB3D1F;
+    width:fit-content;
+}
+.navbar-dark .navbar-toggler {
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: #F09395;
+}
+.showcase{
+    margin-top:1rem;
+    margin-botoom:1rem;
+}
+.stripe1,.stripe2,.stripe3,.stripe4,.stripe5,.stripe6,.stripe7,.stripe8{
+    height: 20px;
+    width: 40%;
+    background-color: red;
+        transform: skew( 
+45deg);
+    margin-top:4rem;
+    margin-bottom:4rem;
+}
+.location{
+    background-color: #F8D3D4;
+    margin-right: 1rem;
+    margin-left:1rem;
+    margin-bottom: 1rem;
+}
+.location::before{
+    content: '';
+    transform: skew(30deg);
+    height: 30px;
+    width: 40px;
+    border-bottom: 0px solid #EC4F4E;
+    border-left: 20px solid #EC4F4E;
+    align-self: end;
+    float: right;
+    margin-right: -44px;
+}
+.showcase{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    padding:2rem;
+}
+.showcase .no-gutters{
+    margin-top:1.5rem;
+    margin-bottom: 1.5rem;
+}
+.showcase-text h2{
+    margin-top:2rem;
+}
+.emergency{
+    background-color: #FCEDEE;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.stripe1{
+    justify-self: right;
+    order:1;
+}
+.stripe2{
+    justify-self: left;
+    order:2;
+}
+.stripe3{
+    justify-self: right;
+    order:3;
+}
+.stripe4{
+    justify-self: left;
+}
+.stripe5{
+    justify-self: right;
+}
+.stripe6{
+    justify-self: left;
+}
+.stripe7{
+    justify-self: right;
+}
+.stripe8{
+    justify-self: left;
+}
+/*
+.stripe::after{
+content: '';
+    transform: skew( 
+45deg);
+    height: 20px;
+    width: 40px;
+    border-bottom: 0px solid #f00;
+    border-left: 20px solid #ff0000;
+    align-self: end;
+    float: right;
+    margin-right: -30px;
+}
+*/
+
+footer{
+    
+    position:relative;
+    top:0;
+     background-color: #FCEDEE;
+}
+.copyright>p{
+    text-align: center;
+    padding:2rem;
+}
+
+.container{
+    min-height: 100px;
+}
+
+.main-content-wrapper{
+    min-height: calc(100vh - 70px);
+    display:grid;
+}
+.main-content-stripe{
+    display:none;
+    position: fixed;
+    z-index: -1;
+}
+.navbar-brand img{
+content: url(styles/ATTA_Logo.png);
+object-fit: contain;
+    width: 10rem;
+    position: relative;
+  
+}
+
+
+@media (min-width: 576px){
+.navbar-expand-sm .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+    } 
+    .mobile-appear{
+        display:none;
+    }
+    nav.navbar.navbar-expand-sm.bg-light.navbar-dark {
+        height: 8rem;
+    }
+}
+
+
+
+@media (max-width: 576px){
+    .mobile-poof {
+        display:none;
+        } 
+    .location{
+    margin-right: 0rem !important;
+    margin-left:0rem !important;
+    margin-bottom: 1rem ;
+}
+    }
